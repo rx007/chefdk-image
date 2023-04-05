@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
 group :lint do
-  gem 'foodcritic', '~> 4.0'
-  gem 'rubocop'
+  gem 'foodcritic', '~> 4.0', '>= 4.0.0'
+  gem 'rubocop', '>= 0.49.0'
 end
 
 group :unit do
-  gem 'chefspec', '~> 4.1'
-  gem 'berkshelf', '~> 3.1'
+  gem 'chefspec', '~> 4.1', '>= 4.1.1'
+  gem 'berkshelf', '~> 4.2', '>= 4.2.3'
 end
 
 group 'integration' do
