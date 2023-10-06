@@ -7,14 +7,14 @@ end
 
 group :unit do
   gem 'chefspec', '~> 4.1'
-  gem 'berkshelf', '~> 3.1'
+  gem 'berkshelf', '~> 7.0', '>= 7.0.0'
 end
 
 group 'integration' do
   gem 'kitchen-docker', '~> 1.5.0'
   gem 'kitchen-sync'
   gem 'kitchen-vagrant', '~> 0.11'
-  gem 'minitest-chef-handler'
+  gem 'minitest-chef-handler', '>= 1.1.0'
   gem 'test-kitchen', '~> 1.2'
   gem 'vagrant-wrapper'
 end
